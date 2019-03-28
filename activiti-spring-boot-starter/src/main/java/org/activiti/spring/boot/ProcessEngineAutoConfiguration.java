@@ -130,8 +130,6 @@ public class ProcessEngineAutoConfiguration extends AbstractProcessEngineAutoCon
             conf.setDeploymentMode(activitiProperties.getDeploymentMode());
         }
 
-        conf.setActivityBehaviorFactory(new CloudActivityBehaviorFactory());
-
         if (processEngineConfigurationConfigurer != null) {
             processEngineConfigurationConfigurer.configure(conf);
         }
